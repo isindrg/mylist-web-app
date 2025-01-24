@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 # Enable CORS for cross-origin requests
-CORS(app, resources={r"/*": {"origins": ["http://tasklist-frontend.s3-website.eu-north-1.amazonaws.com", "http://localhost:4200"]}})
+CORS(app, resources={r"/*": {"origins": ["http://tasklist-frontend.s3-website.eu-north-1.amazonaws.com"]}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Database configuration
